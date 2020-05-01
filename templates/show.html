@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <style>
+            body{
+                 background:url('static/img/display1.jpg') no-repeat;
+
+                font-family: 20px;
+                font-size: 25px;
+                font-family: sans-serif;
+            }
+            h1 {
+                color: white;
+            }
+            tr:nth-child(odd) { background-color:#fff; }
+            tr:nth-child(even) { background-color:#eee; }
+            tr:hover { background-color:#ffff99; }
+
+            text2.dataframe, .datafram th, .datafram td {
+            border: none;
+            border-bottom: 1px solid #c8c8c8;
+            border-collapse: collapse;
+            text-align:center;
+            padding:10px;
+            }
+
+        </style>
+
+        </head>
+        <body>
+            <center>   <h1> The companies for {{text1}} are : </h1>
+              {{text2 | safe}} </center>
+
+
+        </body>
+
+    </html>

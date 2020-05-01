@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Login page</title>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+            <style>
+                @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+                body {
+                    margin: ;
+                    padding: ;
+                    font-family: sans-serif;
+                    background:url('static/img/images.jpg') no-repeat;
+                    background-size: cover;
+                }
+                div.login-box {
+                    width: 280px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: white;
+                }
+                div.login-box h1{
+                    float: left;
+                    font-size: 20px;
+                    border-bottom: 1px solid #4caf50;
+                    margin-bottom: 40px;
+                    padding: 1px 2px;
+                }
+
+                div.textbox {
+                    width: 100%;
+                    overflow: hidden;
+                    font-size: 20px;
+                    padding: 8px 0;
+                    margin: 8px 0;
+                    border-bottom: 1px solid #4caf50;
+                }
+                div.textbox i {
+                    width: 26px;
+                    float: left;
+                    text-align: center;
+                }
+                div.textbox input {
+
+                    border: none;
+                    border-radius: 30px;
+                    outline: none;
+                    background: none;
+                    color: white;
+                    font-size: 18px;
+                    width: 60%;
+                    float: left;
+                    margin: 0 10px;
+                }
+
+            .sub {
+                width: 100%;
+                background: black;
+                border: 2px solid #4caf50;
+                color: white;
+                border-radius: 30px;
+                padding: 5px;
+                font-size: 18px;
+                cursor: pointer;
+                margin: 10px 0;
+            }
+            .sub:hover {
+                    background-color: #696969;
+            }
+
+        div.login-box h4 {
+            color: darkred;
+        }
+
+
+            </style>
+
+
+            <body>
+        <div class="login-box">
+        <h1>Login</h1>
+
+
+            <form method="post">
+
+
+                <div class="textbox">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" name="username" placeholder="username" required>
+                </div>
+                <div class="textbox">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" name="password" placeholder="password" required>
+                </div>
+
+                <a href="detailspage.html"> <input  class="sub"  type="submit" name="login" value="LOGIN" id="submit"> </a>
+
+            </form>
+
+            <h4><i> Not a member, register here</i> <a  href="/register"> <input class="sub" type="submit" name="signup" value="REGISTER" </a> </h4>
+     </div>
+
+
+
+        </body>
+
+    </html>

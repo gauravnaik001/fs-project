@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html>
+        <head> <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<title>Display companies</title>
+            <style>
+                 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+                 body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: sans-serif;
+                    background:url('static/img/display1.jpg') no-repeat;
+                    background-size: cover;
+                }
+                div.login-box {
+                    width: 300px;
+                    color: black;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: white;
+                }
+
+
+                div.textbox {
+                    width: 65%;
+                    overflow: hidden;
+                    font-size: 20px;
+                    padding: 8px 0;
+                    margin: 8px 0;
+                    border-bottom: 1px solid #4caf50;
+                }
+                div.textbox input {
+                    border-radius: 30px;
+                    border: none;
+                    outline: none;
+                    background: none;
+                    color: black;
+                    font-size: 18px;
+                    width: 100px;
+                    float: left;
+                    margin: 0 10px;
+                }
+               .sub1 {
+                width: 55%;
+                background: black;
+                   border-radius: 25px;
+                border: 2px solid green;
+                color: white;
+                padding: 7px;
+                font-size: 15px;
+                cursor: pointer;
+                margin: 12px 0;
+
+               }
+               .sub1:hover {
+                    background-color: #696969;
+                }
+
+                div.textbox i {
+                    width: 4px;
+                    float: left;
+                    text-align: left;
+                    color:black;
+                    margin: 0px 0px;
+                    padding-bottom: 0px;
+                }
+                 div.login-box h2{
+                    float: top;
+                    font-size:  opx;
+                    border-bottom: px solid gray;
+                    margin-bottom: 0px;
+                    padding: 20px px;
+                     color: white;
+                }
+
+
+            </style>
+        </head>
+        <body>
+        <div class="login-box">
+            <h1>Enter your usn</h1>
+
+             <form method="post">
+
+                 <div class="textbox">
+                      <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="text" name="usn" placeholder=" usn" required>
+                 </div>
+
+                <input class="sub1" type="submit" name="enter" value='ENTER' >
+             </form>
+        </div>
+        </body>
+
+    </html>

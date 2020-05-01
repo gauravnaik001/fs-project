@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+            <style>
+                .box1 {
+                    float: left;
+                    border-radius: 30px;
+                }
+                .box2 {
+                    float: right;
+                    border-radius: 30px;
+                }
+                .box3 {
+                    border-radius: 30px;
+                    padding: 10px 10px;
+                }
+
+                .box3:hover {
+                    background-color: #f1f1f1;
+
+                }
+                body{
+                    background-color: gray;
+
+                }
+
+            </style>
+        </head>
+        <body>
+            <div class="box1">
+            <h1>To enter student data </h1>
+            <a href="/detailspage"><button class="box3">Enter Data</button></a>
+            </div>
+            <div class="box2">
+
+            <h1>To check for companies the student is eligible for </h1>
+            <a href="/display"><button class="box3">Check Companies</button></a>
+            </div>
+
+        </body>
+
+    </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <style>
+               @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+              body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: sans-serif;
+                    background:url('static/img/register4.jpg') no-repeat;
+                    background-size: cover;
+                }
+                div.login-box {
+                    width: 280px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: white;
+                }
+
+                div.textbox {
+                    width: 65%;
+                    overflow: hidden;
+                    font-size: 20px;
+                    padding: 8px 0;
+                    margin: 8px 0;
+                    border-bottom: 1px solid #4caf50;
+                }
+                 div.textbox input {
+                    border-radius: 30px;
+                    border: none;
+                    outline: none;
+                    background: none;
+                    color: white;
+                    font-size: 18px;
+                    width: 80%;
+                    float: left;
+                    margin: 0 10px;
+                }
+                .sub1 {
+                width: 40%;
+                background:black;
+                border: 2px solid green;
+
+                color:white ;
+                border-radius: 25px;
+                padding: 6px;
+                font-size: 15px;
+                cursor: pointer;
+                margin: 0 10%;
+            }
+            .sub1:hover {
+                    background-color: #696969;
+            }
+
+                            div.textbox i {
+                    width: 26px;
+                    float: left;
+                    text-align: center;
+                }
+        </style>
+
+        </head>
+        <body>
+         <div class="login-box">
+            <h1> REGISTER</h1>
+            <form method="post">
+
+                 <div class="textbox">
+                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <input  type="text" name="username" placeholder="enter username" required>
+                 </div>
+                <div class="textbox">
+                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <input  type="password" name="password" placeholder="enter password" required>
+                </div>
+                  <div class="textbox">
+                   <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <input  type="password" name="password1" placeholder="confirm password" required>
+                  </div>
+                <a href="login.html"> <input class="sub1" type="submit" name="login" value="SIGN UP"> </a>
+            </form>
+
+        </body>
+
+    </html>

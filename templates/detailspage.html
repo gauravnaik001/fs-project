@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+             <style>
+               @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+              body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: sans-serif;
+                    background:url('static/img/images.jpg') no-repeat;
+                    background-size: cover;
+                }
+                div.login-box {
+                    width: 280px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: white;
+                }
+
+                div.textbox {
+                    width: 65%;
+                    overflow: hidden;
+                    font-size: 20px;
+                    padding: 8px 0;
+                    margin: 8px 0;
+                    border-bottom: 1px solid #4caf50;
+                }
+                 div.textbox input {
+                    border-radius: 30px;
+                    border: none;
+                    outline: none;
+                    background: none;
+                    color: white;
+                    font-size: 18px;
+                    width: 150px;
+                    float: left;
+                    margin: 0 10px;
+                }
+               .sub1 {
+                width: 65%;
+                background: black;
+                border: 2px solid green;
+                color: white;
+                   border-radius: 30px;
+                padding: 7px;
+                font-size: 14px;
+                cursor: pointer;
+                margin: 12px 0;
+            }
+
+            .sub1:hover {
+                    background-color: #696969;
+            }
+                            div.textbox i {
+                    width: 26px;
+                    float: left;
+                    text-align: center;
+                                color: black;
+                }
+        </style>
+        </head>
+        <body>
+        <div class="login-box">
+            <h1>Enter your details</h1>
+            <form method="post" >
+                 <div class="textbox">
+                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                <input type="text" name="name" placeholder="Enter Name" required>
+                 </div>
+                 <div class="textbox">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                     <input type="text" name="fname" placeholder="Father Name" required>
+                 </div>
+                 <div class="textbox">
+                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                <input type="text" name="usn" placeholder="Enter Usn" required>
+                 </div>
+                 <div class="textbox">
+                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                <input type="number" name="no" placeholder="Phone No" required>
+                 </div>
+                     <div class="textbox">
+                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                <input type="email" name="mail" placeholder="Email id" required>
+                 </div>
+                     <a href="markspage.html"> <input class="sub1" type="submit" name="Submit" value="Submit" > </a>
+            </form>
+        </div>
+
+
+
+        </body>
+
+    </html>
